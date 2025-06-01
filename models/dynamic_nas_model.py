@@ -1,6 +1,7 @@
 # models/dynamic_nas_model.py
 
 import torch.nn as nn
+import torch
 from models.modular_blocks import BLOCK_MODULES
 from config import settings
 

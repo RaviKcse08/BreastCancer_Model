@@ -10,6 +10,7 @@
 # Function to decode genotype to a model instance
 from models.dynamic_nas_model import DynamicNASModel
 from config import settings
+import numpy as np
 
 def decode_architecture_genotype(genotype_array, num_classes, width_factor):
     """

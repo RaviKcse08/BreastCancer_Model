@@ -4,6 +4,8 @@ from torch.utils.data import Dataset
 import os
 import pandas as pd
 from data.transforms import dicom_to_pil # Import our DICOM utility
+import torch
+import settings
 
 class HospitalMedicalDataset(Dataset):
     def __init__(self, data_csv_path, root_dir, transform=None, use_cropped_roi=True):

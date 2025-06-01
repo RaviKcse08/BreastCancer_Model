@@ -3,6 +3,9 @@
 import flwr as fl
 import torch
 import collections
+import torch.nn as nn
+import numpy as np
+from sklearn.metrics import roc_auc_score
 
 from hpo_nas.hgw_bo_optimizer import HGWBO_Optimizer
 from models.dynamic_nas_model import DynamicNASModel
